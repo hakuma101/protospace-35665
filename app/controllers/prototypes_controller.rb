@@ -15,7 +15,6 @@ class PrototypesController < ApplicationController
       redirect_to root_path(@prototype)
     else
       render :new
-      @prototype = @prototype.includes(:user)
     end
   end
 
